@@ -30,6 +30,11 @@
 				"typeProperties": {
 					"source": {
 						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
 						}
@@ -57,7 +62,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText1",
+						"referenceName": "DelimitedText8",
 						"type": "DatasetReference"
 					}
 				],
