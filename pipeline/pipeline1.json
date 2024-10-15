@@ -19,7 +19,9 @@
 						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
-							"fileListPath": "mycontainer/NEWFOLDER",
+							"recursive": true,
+							"wildcardFolderPath": "NEWFOLDER",
+							"wildcardFileName": "*.csv",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -56,7 +58,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText10",
+						"referenceName": "DelimitedText11",
 						"type": "DatasetReference"
 					}
 				]
