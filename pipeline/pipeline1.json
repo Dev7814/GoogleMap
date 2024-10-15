@@ -55,7 +55,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "DelimitedText7",
+						"referenceName": "DelimitedText10",
 						"type": "DatasetReference"
 					}
 				]
